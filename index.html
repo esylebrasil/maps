@@ -1,0 +1,43 @@
+<html lang="en">
+  <head>
+    <title>Explore Seattle</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    </head>
+  <body>
+    
+    <div class="container-fluid">
+      <header>
+        <h2>Seattle Landmarks</h2>
+      </header>
+    </div>
+    
+    <section>
+      <h3>Select Your Desired Destination</h3>
+      <form>
+        <select class="form-control" name="selectInput" id="selectInput" size="4" single>
+          <option id="selectInput" value="Space Needle" data-src="https://maps.googleapis.com/maps/api/staticmap?size=600x400&center= 47.620610, -122.349371&zoom=16&zoom=16&markers=color:red| 47.620610, -122.349371&key= AIzaSyD2pHU41KU300ovYtRyNHpRZzI8iim1Q1w">Space Needle</option>
+          <option id="selectInput" value="Pike Place Market" data-src="https://maps.googleapis.com/maps/api/staticmap?size=600x400&center= 47.608946, -122.340595&zoom=16&zoom=16&markers=color:red| 47.608946, -122.340595&key= AIzaSyD2pHU41KU300ovYtRyNHpRZzI8iim1Q1w">Pike Place Market</option>
+          <option id="selectInput" value="Experience Music Project" data-src="https://maps.googleapis.com/maps/api/staticmap?size=600x400&center= 47.621463, -122.347869&zoom=16&zoom=16&markers=color:red| 47.621463, -122.347869&key= AIzaSyD2pHU41KU300ovYtRyNHpRZzI8iim1Q1w">Experience Music Project</option>
+          <option id="selectInput" value="Benaroya Hall" data-src="https://maps.googleapis.com/maps/api/staticmap?size=600x400&center= 47.608065, -122.336952&zoom=16&zoom=16&markers=color:red| 47.608065, -122.336952&key= AIzaSyD2pHU41KU300ovYtRyNHpRZzI8iim1Q1w">Benaroya Hall</option>
+        </select>
+      </form>
+    </section>
+    <section>
+      <h2 id="locationName"></h2>
+    </section>
+    <section>
+      <div><img id="mapOutput" src=""></div>
+    </section>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
+    
+    
